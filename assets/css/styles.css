@@ -1,0 +1,61 @@
+/* styles.css — Core styles for ProMouse 3D showcase */
+:root{
+  --bg:#0b1020;
+  --panel:#0f1624;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --max-width:1200px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  color:#e6eef6;
+  background:linear-gradient(180deg,var(--bg),#06070a);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+.site-header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,16,32,0.6),transparent);backdrop-filter:blur(6px);z-index:40}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.logo{font-weight:700;color:var(--accent);text-decoration:none}
+.main-nav{margin-left:auto;display:flex;gap:1rem}
+.main-nav a{color:var(--muted);text-decoration:none}
+.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:0.5rem;border-radius:8px;color:var(--muted)}
+
+.hero{padding:4rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 520px;gap:2rem;align-items:center}
+.title{font-size:2.2rem;margin:0 0 0.5rem}
+.lead{color:var(--muted);margin-bottom:1rem}
+.variant-controls{display:flex;gap:0.5rem;margin-bottom:1rem}
+.variant{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:0.6rem 1rem;border-radius:999px;color:var(--muted)}
+.variant.active{background:linear-gradient(90deg,#0f2133,#112233);color:var(--accent);border-color:rgba(110,231,183,0.12);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.feature-buttons{display:flex;gap:0.5rem;margin-bottom:1.5rem}
+.feature-buttons button{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:0.5rem 0.8rem;border-radius:8px;color:var(--muted)}
+.cta{display:inline-block;padding:0.8rem 1.2rem;background:linear-gradient(90deg,var(--accent),#3ddaa0);color:#02121a;border-radius:10px;text-decoration:none;font-weight:600}
+
+.canvas-wrap{width:520px;height:360px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);display:flex;align-items:center;justify-content:center}
+#heroCanvas{width:100%;height:100%;display:block}
+
+.section{padding:3rem 0}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.feature-card{background:var(--panel);padding:1rem;border-radius:12px}
+
+.metrics-grid{display:flex;gap:1rem}
+.metric-card{flex:1;background:var(--panel);padding:1rem;border-radius:12px}
+
+.review-list{display:flex;flex-direction:column;gap:0.8rem}
+.review{background:linear-gradient(180deg,#0e1420,#0b111a);padding:1rem;border-radius:10px}
+
+.site-footer{padding:2rem 0;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:1000px){.hero-grid{grid-template-columns:1fr 1fr}.canvas-wrap{width:100%;height:320px}}
+@media (max-width:700px){.hero-grid{grid-template-columns:1fr;gap:1rem}.canvas-wrap{height:260px}.main-nav{display:none}}
+
+/* Dark mode toggle class */
+.light{--bg:#f8fafc;--panel:#ffffff;--muted:#334155;--accent:#0b63ff;color:#0b1020}
