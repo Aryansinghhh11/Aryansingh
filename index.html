@@ -1,12 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MouseInfo 3D</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Computer Mouse — Info & Demo</title>
+  <link rel="stylesheet" href="/style.css" />
+  <meta name="description" content="Interactive 3D computer mouse demo with information about types, DPI, buttons, and history." />
+</head>
+<body>
+  <header>
+    <h1>3D Computer Mouse — Interactive Info</h1>
+  </header>
+
+  <main>
+    <section id="viewer">
+      <canvas id="three-canvas"></canvas>
+      <div id="info-panel">
+        <h2 id="part-title">Mouse Body</h2>
+        <p id="part-desc">Rotate the mouse with your mouse or touch. Click parts to highlight and learn more.</p>
+        <ul>
+          <li><strong>Types:</strong> Mechanical (ball), Optical, Laser, Trackball, Touch</li>
+          <li><strong>DPI:</strong> Dots per inch — higher DPI = more pointer sensitivity</li>
+          <li><strong>Buttons:</strong> Left, Right, Middle (scroll wheel), extra programmable buttons</li>
+          <li><strong>Connectivity:</strong> Wired (USB), Wireless (RF, Bluetooth)</li>
+        </ul>
+        <p>Tip: Click the scroll wheel on the 3D model to learn about scrolling.</p>
+      </div>
+    </section>
+
+    <section id="details">
+      <h2>Mouse History & Notes</h2>
+      <p>The computer mouse was invented in the 1960s. Modern mice use optical or laser sensors for precise tracking. Gamers often choose high-DPI mice with programmable buttons, while designers may prefer low-latency wired mice.</p>
+      <h3>Maintenance</h3>
+      <ol>
+        <li>Keep the sensor area clean.</li>
+        <li>Use a good mouse pad for consistent tracking.</li>
+        <li>Replace batteries on wireless mice when needed.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with Three.js — interactive demo included.</p>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.152.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="/script.js"></script>
+</body>
 </html>
