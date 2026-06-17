@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mouse Info — Interactive Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🖱️ MouseInfo</div>
+    <nav>
+      <a href="#types">Types</a>
+      <a href="#anatomy">Anatomy</a>
+      <a href="#tips">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Everything about your Mouse</h1>
+        <p class="subtitle">Discover types, specs, and how your mouse works — with live, interactive demos.</p>
+        <a class="cta" href="#demo">Try the demo</a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mouse-card" id="mouseCard">
+          <!-- simple SVG mouse illustration -->
+          <svg class="mouse-svg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+                <stop offset="1" stop-color="#d9e6ff" stop-opacity="0.95"/>
+              </linearGradient>
+            </defs>
+            <rect x="25" y="20" width="150" height="260" rx="70" fill="url(#g1)" stroke="#11182711" stroke-width="2" />
+            <rect x="80" y="35" width="40" height="70" rx="18" fill="#f5f7ff"/>
+            <circle cx="100" cy="180" r="14" fill="#11182711" opacity="0.08"/>
+          </svg>
+          <div class="mouse-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+      <h2>Interactive Demo</h2>
+      <p>Move your mouse to see card tilt and coordinates. Click to create ripples.</p>
+      <div class="demo-panel">
+        <div class="info">
+          <div>Coordinates: <span id="coords">x: —, y: —</span></div>
+          <div>Buttons pressed: <span id="buttons">none</span></div>
+          <div>Last click: <span id="lastClick">—</span></div>
+        </div>
+        <div class="follower-area" id="followerArea">
+          <div class="cursor-follower" id="follower"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="types" class="cards">
+      <h2>Types of Mice</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Optical Mouse</h3>
+          <p>Uses an LED and sensor to track movement on most surfaces.</p>
+        </article>
+        <article class="card">
+          <h3>Laser Mouse</h3>
+          <p>Higher sensitivity using laser; works on more surfaces and higher DPI.</p>
+        </article>
+        <article class="card">
+          <h3>Mechanical (Ball)</h3>
+          <p>Older design with a rolling ball — mostly obsolete now.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="anatomy" class="cards">
+      <h2>Mouse Anatomy</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Left & Right Buttons</h3>
+          <p>Primary controls for clicking and selecting.</p>
+        </article>
+        <article class="card">
+          <h3>Scroll Wheel</h3>
+          <p>For vertical navigation; many wheels can also tilt or be clicked.</p>
+        </article>
+        <article class="card">
+          <h3>Sensor & DPI</h3>
+          <p>DPI = dots per inch, higher = more cursor movement per physical inch.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips" class="tips">
+      <h2>Pro Tips</h2>
+      <ul>
+        <li>Adjust DPI for your workflow: lower for precision, higher for speed.</li>
+        <li>Use a mousepad optimized for your sensor type.</li>
+        <li>Keep firmware and drivers updated for additional features.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Made with ❤️ — MouseInfo</span>
+    <span>•</span>
+    <a href="#" id="sourceToggle">Toggle theme</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
