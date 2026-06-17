@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mouse-1",
+    "name": "Example Ergonomic Mouse",
+    "summary": "A placeholder ergonomic mouse used to demo the 3D viewer and site layout.",
+    "type": "Ergonomic",
+    "sensor": "Optical (PixArt-Placeholder)",
+    "dpi": "800-3200",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+  },
+  {
+    "id": "mouse-2",
+    "name": "Example Gaming Mouse",
+    "summary": "A placeholder gaming mouse with higher DPI and extra buttons.",
+    "type": "Gaming",
+    "sensor": "Optical (High-precision)",
+    "dpi": "400-16000",
+    "image": "https://images.unsplash.com/photo-1555617117-08fda6fb01d0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+  }
+]
