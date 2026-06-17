@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Mouse Showcase — Interactive Specs</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Three.js and OrbitControls (non-module builds) -->
+  <script src="https://unpkg.com/three@0.154.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.154.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>3D Mouse Showcase</h1>
+    <p class="sub">Interactive demonstration of mouse specs, features, and comparisons</p>
+  </header>
+
+  <main class="layout">
+    <aside class="panel">
+      <section class="specs">
+        <h2>Real-time Specifications</h2>
+        <div class="spec-list">
+          <div class="spec"><span class="label">DPI</span><span id="dpiValue">16000</span></div>
+          <div class="spec"><span class="label">Buttons</span><span id="buttonsValue">6</span></div>
+          <div class="spec"><span class="label">Weight</span><span id="weightValue">89 g</span></div>
+          <div class="spec"><span class="label">Cable</span><span id="cableValue">2.0 m</span></div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <h2>Interactive Controls</h2>
+
+        <label> DPI <input id="dpi" type="range" min="400" max="32000" step="100" value="16000"><span id="dpiLabel">16000</span></label>
+
+        <label> Buttons <input id="buttons" type="range" min="1" max="12" step="1" value="6"><span id="buttonsLabel">6</span></label>
+
+        <label> Weight (g) <input id="weight" type="range" min="45" max="180" step="1" value="89"><span id="weightLabel">89</span></label>
+
+        <label> Cable (m) <input id="cable" type="range" min="0" max="3" step="0.1" value="2.0"><span id="cableLabel">2.0</span></label>
+
+        <label> Body Color <input id="color" type="color" value="#2b8cff"></label>
+
+        <label> Highlight Strength <input id="highlight" type="range" min="0" max="1" step="0.01" value="0.75"><span id="highlightLabel">0.75</span></label>
+
+        <p class="hint">Hover mouse parts to see highlights and tooltips. Use touch to rotate on mobile.</p>
+      </section>
+
+      <section class="compare">
+        <h2>Comparison Table</h2>
+        <div class="table-wrap">
+          <table class="comp">
+            <thead>
+              <tr>
+                <th>Model</th><th>DPI</th><th>Buttons</th><th>Weight</th><th>Cable</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Falcon X</td><td>16000</td><td>6</td><td>89 g</td><td>2.0 m</td>
+              </tr>
+              <tr>
+                <td>Stealth V2</td><td>32000</td><td>8</td><td>74 g</td><td>0.8 m</td>
+              </tr>
+              <tr>
+                <td>Orbiter</td><td>12000</td><td>4</td><td>102 g</td><td>1.8 m</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="credits">
+        <small>Built with Three.js • Responsive • Mobile-friendly</small>
+      </footer>
+    </aside>
+
+    <section class="viewer">
+      <div id="canvasContainer" class="canvas-container" aria-hidden="false"></div>
+      <div id="tooltip" class="tooltip" role="status" aria-live="polite">Hover parts</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
