@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaMouse — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/mouse-site/">NovaMouse</a>
+      <nav class="nav">
+        <a href="/mouse-site/">Home</a>
+        <a href="/mouse-site/products.html">Products</a>
+        <a href="/mouse-site/admin.html">Admin</a>
+        <a class="btn-outline" href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Precision. Comfort. Control.</h1>
+          <p>Explore high-performance mice engineered for gamers, creatives and professionals.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="/mouse-site/products.html">Explore Mice</a>
+            <a class="btn-ghost" href="/mouse-site/admin.html">Manage Products</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b2b72f0b0d6eef7e32f8a0a7f1b7f9a" alt="Computer mouse on desk" />
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section products">
+      <div class="container">
+        <h2>Featured Mice</h2>
+        <p class="lede">Hand-picked models — click a card for full details.</p>
+
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container feature-grid">
+        <div class="feature">
+          <h3>High-Precision Sensors</h3>
+          <p>Optical sensors up to 20,000 DPI for pixel-perfect tracking.</p>
+        </div>
+        <div class="feature">
+          <h3>Ergonomic Designs</h3>
+          <p>Comfort-first shapes for long sessions — right-handed, left-handed, and ambidextrous options.</p>
+        </div>
+        <div class="feature">
+          <h3>Customizable Buttons</h3>
+          <p>Onboard profiles and programmable buttons via our config tool.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-col">
+        <a class="brand" href="/mouse-site/">NovaMouse</a>
+        <p>© <span id="year"></span> NovaMouse. All rights reserved.</p>
+      </div>
+      <div class="links-col">
+        <a href="/mouse-site/products.html">Products</a>
+        <a href="/mouse-site/admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
