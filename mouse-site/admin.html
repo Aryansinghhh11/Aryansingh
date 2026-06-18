@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaMouse — Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/mouse-site/">NovaMouse</a>
+      <nav class="nav">
+        <a href="/mouse-site/">Home</a>
+        <a href="/mouse-site/products.html">Products</a>
+        <a href="/mouse-site/admin.html">Admin</a>
+        <a class="btn-outline" href="/mouse-site/cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Admin — Product Manager</h1>
+        <p class="lede">Edit products in the browser. Changes persist to localStorage. Use Export to copy JSON into your repo.</p>
+
+        <div class="admin-grid">
+          <div>
+            <h3>Add / Edit Product</h3>
+            <form id="product-form">
+              <input name="id" placeholder="id (unique)" required />
+              <input name="name" placeholder="Product name" required />
+              <input name="image" placeholder="Image URL" />
+              <input name="price" placeholder="Price (e.g. $79)" />
+              <input name="dpi" placeholder="DPI" />
+              <input name="weight" placeholder="Weight" />
+              <input name="type" placeholder="Type (Wireless/Wired)" />
+              <textarea name="desc" placeholder="Short description"></textarea>
+              <div style="margin-top:8px;"><button type="submit" class="btn-primary">Save</button> <button type="button" id="reset-form" class="btn-ghost">Reset</button></div>
+            </form>
+
+            <div style="margin-top:12px;">
+              <button id="export-json" class="btn-ghost">Export JSON</button>
+              <button id="reset-products" class="btn-ghost">Reset to defaults</button>
+            </div>
+          </div>
+
+          <div>
+            <h3>Products</h3>
+            <div id="admin-list"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-col"><a class="brand" href="/mouse-site/">NovaMouse</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

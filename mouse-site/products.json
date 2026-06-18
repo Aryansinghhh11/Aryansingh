@@ -1,0 +1,68 @@
+[
+  {
+    "id": "nm-pro",
+    "name": "NovaMouse Pro",
+    "image": "https://images.unsplash.com/photo-1616628183186-5e0d966a3f6a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0953f6c6b2f77e6e6b4c",
+    "price": 79,
+    "priceLabel": "$79",
+    "dpi": "16000 DPI",
+    "weight": "89g",
+    "type": "Wireless",
+    "desc": "Pro-grade sensor, low-latency wireless, RGB lighting"
+  },
+  {
+    "id": "nm-lite",
+    "name": "NovaMouse Lite",
+    "image": "https://images.unsplash.com/photo-1587825140408-2b61aef9d88a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2e2f3d4a1c7b3d9e6f1a",
+    "price": 39,
+    "priceLabel": "$39",
+    "dpi": "8000 DPI",
+    "weight": "65g",
+    "type": "Wired",
+    "desc": "Lightweight body for fast flicks and comfortable grip"
+  },
+  {
+    "id": "nm-ergo",
+    "name": "NovaMouse Ergo",
+    "image": "https://images.unsplash.com/photo-1585386959984-a41552296b9d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5d1a3b4f6c7a8b9c0d1e",
+    "price": 69,
+    "priceLabel": "$69",
+    "dpi": "12000 DPI",
+    "weight": "98g",
+    "type": "Wireless",
+    "desc": "Ergonomic shell for all-day comfort and reduced strain"
+  },
+  {
+    "id": "nm-ultra",
+    "name": "NovaMouse Ultra",
+    "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a4d9f1b2c8e4d5f6a7b",
+    "price": 99,
+    "priceLabel": "$99",
+    "dpi": "20000 DPI",
+    "weight": "75g",
+    "type": "Wireless",
+    "desc": "Ultra-lightweight design with top-tier sensor performance"
+  },
+  {
+    "id": "nm-ambidex",
+    "name": "NovaMouse Ambidex",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7g8h9i0j",
+    "price": 59,
+    "priceLabel": "$59",
+    "dpi": "10000 DPI",
+    "weight": "82g",
+    "type": "Wired",
+    "desc": "Ambidextrous shape suitable for both hands"
+  },
+  {
+    "id": "nm-wireless-lite",
+    "name": "NovaMouse Wireless Lite",
+    "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcdef1234567890",
+    "price": 49,
+    "priceLabel": "$49",
+    "dpi": "9000 DPI",
+    "weight": "70g",
+    "type": "Wireless",
+    "desc": "Affordable wireless option with long battery life"
+  }
+]

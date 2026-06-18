@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaMouse — Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/mouse-site/">NovaMouse</a>
+      <nav class="nav">
+        <a href="/mouse-site/">Home</a>
+        <a href="/mouse-site/products.html">Products</a>
+        <a href="/mouse-site/admin.html">Admin</a>
+        <a class="btn-outline" href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Your Cart</h1>
+        <div id="cart-root"></div>
+        <div id="cart-actions" style="margin-top:18px;">
+          <button id="clear-cart" class="btn-ghost">Clear Cart</button>
+          <button id="checkout" class="btn-primary">Checkout (Mock)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-col"><a class="brand" href="/mouse-site/">NovaMouse</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
